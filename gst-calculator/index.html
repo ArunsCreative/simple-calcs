@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GST Calculator India – GST Inclusive & Exclusive</title>
+
+  <meta name="description"
+        content="Free GST Calculator for India. Calculate GST inclusive and exclusive price at 5%, 12%, 18% and 28% instantly.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <h1>GST Calculator</h1>
+  <p>Calculate GST Inclusive & Exclusive Amount Easily</p>
+</header>
+
+<main class="calculator-box">
+
+  <label>Enter Amount (₹)</label>
+  <input type="number" id="amount" placeholder="e.g. 1000">
+
+  <label>Select GST Rate</label>
+  <select id="rate">
+    <option value="5">5%</option>
+    <option value="12">12%</option>
+    <option value="18" selected>18%</option>
+    <option value="28">28%</option>
+  </select>
+
+  <label>GST Type</label>
+  <select id="type">
+    <option value="exclusive">Add GST (Exclusive)</option>
+    <option value="inclusive">Remove GST (Inclusive)</option>
+  </select>
+
+  <button onclick="calculateGST()">Calculate GST</button>
+
+  <div class="result">
+    <p>GST Amount: ₹<span id="gst">0</span></p>
+    <p>Total Amount: ₹<span id="total">0</span></p>
+  </div>
+
+</main>
+
+<section class="content">
+  <h2>What is GST?</h2>
+  <p>
+    Goods and Services Tax (GST) is an indirect tax in India applied to the supply
+    of goods and services. Common GST slabs include 5%, 12%, 18% and 28%.
+  </p>
+
+  <h2>How to Use GST Calculator?</h2>
+  <ol>
+    <li>Enter the original amount</li>
+    <li>Select applicable GST rate</li>
+    <li>Choose GST inclusive or exclusive</li>
+    <li>Click calculate to get results</li>
+  </ol>
+</section>
+
+<footer>
+  <p>
+    <a href="/">Home</a> |
+    <a href="/about/">About</a> |
+    <a href="/contact/">Contact</a> |
+    <a href="/privacy-policy/">Privacy Policy</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
