@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Income Tax Calculator India – New vs Old Regime</title>
+
+  <meta name="description"
+        content="Free Income Tax Calculator for India. Compare new and old tax regime and estimate your tax liability easily.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Income Tax Calculator (India)</h1>
+  <p>Estimate Your Tax Under New & Old Regime</p>
+</header>
+
+<main class="calculator-box">
+
+  <label>Annual Income (₹)</label>
+  <input type="number" id="income" placeholder="e.g. 800000">
+
+  <label>Deductions (80C, 80D etc.) – Old Regime (₹)</label>
+  <input type="number" id="deductions" placeholder="e.g. 150000">
+
+  <label>Select Tax Regime</label>
+  <select id="regime">
+    <option value="new">New Tax Regime</option>
+    <option value="old">Old Tax Regime</option>
+  </select>
+
+  <button onclick="calculateTax()">Calculate Tax</button>
+
+  <div class="result">
+    <p>Taxable Income: ₹<span id="taxable">0</span></p>
+    <p>Estimated Tax: ₹<span id="tax">0</span></p>
+  </div>
+
+</main>
+
+<section class="content">
+  <h2>What is Income Tax?</h2>
+  <p>
+    Income tax is a tax levied by the Government of India on the income earned by
+    individuals. The tax amount depends on income level and the tax regime chosen.
+  </p>
+
+  <h2>New vs Old Tax Regime</h2>
+  <p>
+    The new tax regime offers lower tax rates but does not allow most deductions,
+    while the old regime allows deductions like 80C, 80D, and HRA.
+  </p>
+</section>
+
+<footer>
+  <p>
+    <a href="/">Home</a> |
+    <a href="/about/">About</a> |
+    <a href="/contact/">Contact</a> |
+    <a href="/privacy-policy/">Privacy Policy</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
