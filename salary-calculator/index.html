@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salary In-Hand Calculator – CTC to Take Home (India)</title>
+
+  <meta name="description"
+        content="Free Salary In-Hand Calculator for India. Convert CTC to take home salary after PF, ESI and professional tax.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Salary In-Hand Calculator</h1>
+  <p>Calculate Monthly Take-Home Salary from CTC</p>
+</header>
+
+<main class="calculator-box">
+
+  <label>Annual CTC (₹)</label>
+  <input type="number" id="ctc" placeholder="e.g. 600000">
+
+  <label>Employee PF (%)</label>
+  <input type="number" id="pf" value="12">
+
+  <label>Professional Tax (Monthly ₹)</label>
+  <input type="number" id="pt" value="200">
+
+  <label>ESI Applicable?</label>
+  <select id="esi">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+  </select>
+
+  <button onclick="calculateSalary()">Calculate Salary</button>
+
+  <div class="result">
+    <p>Gross Monthly Salary: ₹<span id="gross">0</span></p>
+    <p>Total Deductions: ₹<span id="deductions">0</span></p>
+    <p><strong>In-Hand Salary: ₹<span id="inhand">0</span></strong></p>
+  </div>
+
+</main>
+
+<section class="content">
+  <h2>What is Salary In-Hand?</h2>
+  <p>
+    Salary in-hand is the actual amount an employee receives every month after
+    deductions such as Provident Fund (PF), Professional Tax and ESI.
+  </p>
+
+  <h2>How to Use Salary Calculator?</h2>
+  <ol>
+    <li>Enter your annual CTC</li>
+    <li>Enter PF percentage (usually 12%)</li>
+    <li>Enter professional tax</li>
+    <li>Select ESI applicability</li>
+    <li>Click calculate to view take-home salary</li>
+  </ol>
+</section>
+
+<footer>
+  <p>
+    <a href="/">Home</a> |
+    <a href="/about/">About</a> |
+    <a href="/contact/">Contact</a> |
+    <a href="/privacy-policy/">Privacy Policy</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
