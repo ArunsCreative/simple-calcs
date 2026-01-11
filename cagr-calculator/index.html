@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CAGR Calculator – Compound Annual Growth Rate</title>
+
+  <meta name="description"
+        content="Free CAGR Calculator to calculate compound annual growth rate for investments. Easy and accurate CAGR calculation.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <h1>CAGR Calculator</h1>
+  <p>Calculate Compound Annual Growth Rate</p>
+</header>
+
+<main class="calculator-box">
+
+  <label>Initial Value (₹)</label>
+  <input type="number" id="start" placeholder="e.g. 100000">
+
+  <label>Final Value (₹)</label>
+  <input type="number" id="end" placeholder="e.g. 200000">
+
+  <label>Investment Period (Years)</label>
+  <input type="number" id="years" placeholder="e.g. 5">
+
+  <button onclick="calculateCAGR()">Calculate CAGR</button>
+
+  <div class="result">
+    <p><strong>CAGR:</strong> <span id="result">0%</span></p>
+  </div>
+
+</main>
+
+<section class="content">
+  <h2>What is CAGR?</h2>
+  <p>
+    CAGR (Compound Annual Growth Rate) represents the average annual growth rate
+    of an investment over a specific period of time.
+  </p>
+
+  <h2>How to Use CAGR Calculator?</h2>
+  <ol>
+    <li>Enter the initial investment value</li>
+    <li>Enter the final value</li>
+    <li>Enter the number of years</li>
+    <li>Click calculate to get CAGR</li>
+  </ol>
+</section>
+
+<footer>
+  <p>
+    <a href="/">Home</a> |
+    <a href="/about/">About</a> |
+    <a href="/contact/">Contact</a> |
+    <a href="/privacy-policy/">Privacy Policy</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
