@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FD Calculator – Fixed Deposit Returns Calculator</title>
+  <meta name="description" content="Calculate Fixed Deposit maturity amount and interest earned easily.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Fixed Deposit Calculator</h1>
+  <p>Calculate FD Maturity Amount</p>
+</header>
+
+<main class="calculator-box">
+  <label>Deposit Amount (₹)</label>
+  <input type="number" id="amount">
+
+  <label>Interest Rate (% per year)</label>
+  <input type="number" id="rate">
+
+  <label>Tenure (Years)</label>
+  <input type="number" id="years">
+
+  <button onclick="calculateFD()">Calculate FD</button>
+
+  <div class="result">
+    <p>Maturity Amount: ₹<span id="maturity">0</span></p>
+    <p>Interest Earned: ₹<span id="interest">0</span></p>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
