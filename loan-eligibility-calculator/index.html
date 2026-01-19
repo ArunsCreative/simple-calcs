@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loan Eligibility Calculator – Check Loan Amount Eligibility</title>
+
+  <meta name="description"
+        content="Free Loan Eligibility Calculator to check how much loan you can get based on income, expenses, interest rate and tenure.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Loan Eligibility Calculator</h1>
+  <p>Check How Much Loan You Are Eligible For</p>
+</header>
+
+<main class="calculator-box">
+
+  <label>Monthly Income (₹)</label>
+  <input type="number" id="income" placeholder="e.g. 50000">
+
+  <label>Monthly Expenses (₹)</label>
+  <input type="number" id="expenses" placeholder="e.g. 20000">
+
+  <label>Interest Rate (% per year)</label>
+  <input type="number" id="rate" placeholder="e.g. 9">
+
+  <label>Loan Tenure (Years)</label>
+  <input type="number" id="years" placeholder="e.g. 20">
+
+  <button onclick="calculateEligibility()">Check Eligibility</button>
+
+  <div class="result">
+    <p>Eligible Monthly EMI: ₹<span id="emi">0</span></p>
+    <p><strong>Maximum Loan Amount: ₹<span id="loan">0</span></strong></p>
+  </div>
+
+</main>
+
+<section class="content">
+
+  <h2>What is Loan Eligibility?</h2>
+  <p>
+    <strong>Loan eligibility</strong> refers to the maximum loan amount a lender may
+    offer based on your income, expenses, interest rate and repayment capacity.
+  </p>
+
+  <h2>How Loan Eligibility is Calculated</h2>
+  <p>
+    Lenders usually allow a portion of your disposable income to be used as EMI.
+    This calculator assumes around <strong>40–50%</strong> of monthly surplus
+    can be used for loan repayment.
+  </p>
+
+  <h2>How to Use This Calculator</h2>
+  <ol>
+    <li>Enter your monthly income</li>
+    <li>Enter monthly expenses</li>
+    <li>Enter interest rate and tenure</li>
+    <li>Click check eligibility</li>
+  </ol>
+
+</section>
+
+<footer>
+  <p>
+    <a href="/">Home</a> |
+    <a href="/about/">About</a> |
+    <a href="/contact/">Contact</a> |
+    <a href="/privacy-policy/">Privacy Policy</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
