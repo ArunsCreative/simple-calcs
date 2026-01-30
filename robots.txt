@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://freecalc.in/sitemap.xml
